@@ -1,0 +1,368 @@
+@charset "UTF-8";
+/* スマートフォン用CSS */
+
+.hidden-sp {
+	display:none !important;
+}
+.hidden-tb {
+	display: inherit !important;
+}
+.hidden-pc {
+	display: inherit !important;
+}
+
+
+.wrapper {
+    min-width: auto;
+}
+.inner {
+    width: 100%;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+
+/* ヘッダー ====================================================================== */
+.header .inner {
+    padding:0;
+    height:100%;
+}
+.header .header-logo {
+    display: block;
+    margin:0;
+    padding:12px 0 12px 12px;
+    width:70%;
+    float:left;
+}
+.header .header-logo img {
+    width:100%;
+    display:block;
+}
+.header ul.gnav {
+    text-align:center;
+    padding:16px 0 6px;
+    display:none;
+    background-color: rgba(255,255,255,0.95);
+    position: absolute;
+    width:100%;
+    z-index: 10;
+    top:100%;
+    border-bottom:1px solid #ccc;
+}
+.header ul.gnav li {
+    display: block;
+    height:auto;
+}
+.header ul.gnav li:after {
+    display:none;
+}
+.header ul.gnav li a {
+    font-size:4vw;
+    display: block;
+    width:100%;
+    line-height: 2;
+    padding:0.5em 0;
+    transition: all 0s linear;
+}
+.header ul.gnav li a:hover {
+    transition: all 0s linear
+}
+.header ul.gnav li.gnav-contact {
+    padding-bottom:16px;
+}
+.header ul.gnav li.gnav-lang {
+    border-top:1px solid #ccc;
+    display:block;
+    padding-top:6px;
+}
+.header ul.gnav li.gnav-lang a {
+    width:50%;
+    display:block;
+    float:left;
+}
+.header ul.gnav li.gnav-lang a.current {
+    color:#ccc;
+}
+#menubtn {
+    display: block;
+    float: right;
+    width: 60px;
+    padding: 16px 14px;
+    cursor: pointer;
+}
+#menubtn span {
+    display:block;
+    background-color: #000;
+    height:3px;
+    margin:6px 0;
+}
+.header .lang {
+    display:none;
+}
+
+
+
+/* フッター ====================================================================== */
+.footer .inner {
+    padding:5% 5% 0;
+}
+.footer .footer-logo {
+    display:block;
+    margin:6.5% auto 0;
+    width:80%;
+}
+.footer .footer-logo img {
+    width:100%;
+}
+.footer .footer-address {
+    float:none;
+    width:100%;
+}
+.footer .address-text:before {
+    width:40%;
+}
+.footer .address-text {
+    line-height: 1.4;
+    font-size: 3.2vw;
+    text-align: center;
+}
+.footer .address-text span {
+    display:block;
+    padding:1em 0 0.8em;
+}
+.footer .copyright {
+    font-size:2.6vw;
+    padding:15% 0 1em;
+}
+.footer #map {
+    width: 100%;
+    height: 0;
+    padding-top:56.25%;
+    float:none;
+    margin-left:0;
+}
+.footer .googlemap {
+    font-size:4vw;
+    width:60%;
+    margin:2em auto 0;
+    line-height:2;
+}
+
+
+/* contents(common) ====================================================================== */
+.pages .contents .inner {
+    padding:10% 6.25%;
+}
+.pages .contents .inner h3 {
+    font-size:4.5vw;
+    padding: 0 0 1em;
+}
+.pages .contents .inner h3 ~ h3 {
+    padding-top:4em;
+}
+.pages .contents .inner p {
+    font-size:3.6vw;
+}
+.pages .contents .inner p ~ p {
+    padding-top:1em;
+}
+
+
+
+/* MV ====================================================================== */
+.mv {
+    width:100%;
+}
+.mv li {
+    width:100%;
+    height:0;
+    padding-top:13.5%;
+}
+.mv li.mv01 {
+    background: url(../img/home/mv01_sp.png) no-repeat center center;
+    background-size: cover;
+}
+.mv li.mv02 {
+    background: url(../img/home/mv02_sp.png) no-repeat center center;
+    background-size: cover;
+}
+.mv li.mv03 {
+    background: url(../img/home/mv03_sp.png) no-repeat center center;
+    background-size: cover;
+}
+.mv li.mv04 {
+    background: url(../img/home/mv04_sp.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* contents(home) ====================================================================== */
+.home .contents .inner {
+    padding:10% 3.125%;
+}
+
+.arrow-before,
+.arrow-after,
+.arrow-after-big {
+    display:block;
+    position: relative;
+}
+.arrow-before:before {
+    content:"";
+    display:block;
+    width:8px;
+    height:8px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    position: absolute;
+	top: 50%;
+	left: 6%;
+	-webkit-transform: translate(0%, -50%) rotate(-135deg);
+	-moz-transform: translate(0%, -50%) rotate(-135deg);
+	-ms-transform: translate(0%, -50%) rotate(-135deg);
+	-o-transform: translate(0%, -50%) rotate(-135deg);
+	transform: translate(0%, -50%) rotate(-135deg);
+}
+.arrow-after:after {
+    content:"";
+    display:block;
+    width:8px;
+    height:8px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    position: absolute;
+	top: 50%;
+	right: 6%;
+	-webkit-transform: translate(0%, -50%) rotate(45deg);
+	-moz-transform: translate(0%, -50%) rotate(45deg);
+	-ms-transform: translate(0%, -50%) rotate(45deg);
+	-o-transform: translate(0%, -50%) rotate(45deg);
+	transform: translate(0%, -50%) rotate(45deg);
+}
+.arrow-after-big:after {
+    content:"";
+    display:block;
+    width:16px;
+    height:16px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    position: absolute;
+	top: 50%;
+	right: 2%;
+	-webkit-transform: translate(0%, -50%) rotate(45deg);
+	-moz-transform: translate(0%, -50%) rotate(45deg);
+	-ms-transform: translate(0%, -50%) rotate(45deg);
+	-o-transform: translate(0%, -50%) rotate(45deg);
+	transform: translate(0%, -50%) rotate(45deg);
+}
+
+
+.topmenu {
+    width:80%;
+    margin:0 auto;
+}
+.topmenu li {
+    width:100%;
+    margin-bottom:10% !important;
+    float:none !important;
+}
+.topmenu li h3 {
+    font-size:5vw;
+    padding-bottom:2%;
+}
+.topmenu li a span {
+    font-size:3vw;
+}
+
+
+.pages .pagetitle {
+    min-width: auto;
+    height:160px;
+}
+.pages .pagetitle h2 {
+    display:block;
+    font-size: 5vw;
+    letter-spacing: 2px;
+    position: absolute;
+	top: 50%;
+	left: 0;
+    text-align: center;
+    width:100%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+.ucapgroup .pagetitle {
+    background: url(../img/titlebg01.png) no-repeat center center;
+    background-size: cover;
+}
+.business .pagetitle {
+    background: url(../img/titlebg02.png) no-repeat center center;
+    background-size: cover;
+}
+.management .pagetitle {
+    background: url(../img/titlebg03.png) no-repeat center center;
+    background-size: cover;
+}
+.about .pagetitle {
+    background: url(../img/titlebg04.png) no-repeat center center;
+    background-size: cover;
+}
+
+/* 戻るボタン ====================================================================== */
+.backbtn {
+    width:60%;
+    margin:60px auto 0;
+}
+.backbtn a {
+    line-height: 1.8;
+    font-size:4vw;
+}
+
+
+.table01,
+.table01 tbody,
+.table01 tr {
+    width:100%;
+    display: block;
+}
+.table01 th {
+    display: block;
+}
+.table01 th,
+.table01 td {
+    display: block;
+    width:100%;
+    font-size:3.6vw;
+    padding:0.8em 1em;
+    letter-spacing: 1px;
+    white-space:normal;
+}
+.table01 th {
+    text-align:left;
+}
+.table01 .table01-inner {
+    width:100%;
+    border-width:0px;
+    display: table;
+}
+.table01 .table01-inner tr {
+    display: table-row;
+}
+.table01 .table01-inner th,
+.table01 .table01-inner td {
+    display: table-cell;
+}
+.table01 .table01-inner th {
+    text-align: right;
+    width:80px;
+    background-color: #fff;
+    white-space:nowrap;
+}
+.table01 .table01-inner td {
+    padding-left:2em;
+}
+
+

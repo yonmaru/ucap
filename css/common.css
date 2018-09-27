@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/*font-family: "mr-eaves-xl-modern",sans-serif;*/
+
+html {
+  visibility: hidden;
+}
+html.wf-active {
+  visibility: visible;
+}
+
+body {
+    background-color: #fff;
+}
+.wrapper {
+    width:100%;
+    min-width: 1280px;
+    overflow: hidden;
+}
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* フォント ====================================================================== */
+.font-mr {
+    font-family: "mr-eaves-xl-modern",sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+.font-mr-b {
+    font-family: "mr-eaves-xl-modern",sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+.font-ryumin {
+    font-family: "a-otf-ryumin-pr6n",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* ヘッダー ====================================================================== */
+.header {
+    background-color: #fff;
+    position: relative;
+}
+.header .inner {
+    padding-top:44px;
+}
+.header .header-logo {
+    display: block;
+    margin:0 0 0 30px;
+    float: left;
+}
+.header .header-logo a {
+    display:block;
+}
+.header .header-logo a:hover img {
+    opacity: 0.5;
+}
+.header ul.gnav {
+    text-align:center;
+    padding:78px 0 32px;
+    clear: both;
+}
+.header ul.gnav li {
+    display: inline-block;
+    list-style-type: none;
+    height:48px;
+    position: relative;
+}
+.header ul.gnav li:after {
+    content:"｜";
+    display:inline-block;
+}
+.header ul.gnav li:last-of-type:after {
+    display:none;
+}
+.header ul.gnav li a {
+    font-family: "mr-eaves-xl-modern",sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color:#000;
+    text-decoration: none;
+    font-size:18px;
+    letter-spacing: 2px;
+    height: 100%;
+    display: inline-block;
+    line-height: 48px;
+    padding:0 2em;
+    transition: all 0.2s linear;
+}
+.header ul.gnav li a:hover {
+    color:#ccc;
+    transition: all 0.2s linear;
+}
+.header ul.gnav li.gnav-lang {
+    display:none;
+}
+#menubtn {
+    display:none;
+}
+.header .lang {
+    float:right;
+}
+.header .lang li {
+    display: inline-block;
+    padding:0 1em;
+}
+.header .lang li a {
+    font-family: "mr-eaves-xl-modern",sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size:16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color:inherit;
+}
+.header .lang li a:hover,
+.header .lang li.current a{
+    color:#ccc;
+}
+
+
+/* フッター ====================================================================== */
+.footer {
+    background-color: #fff;
+    border-top:1px solid #ccc;
+}
+.footer .inner {
+    padding:80px 0 0;
+}
+.footer .footer-logo {
+    display:block;
+    margin:5px 0 0 8px;
+}
+.footer .footer-logo img {
+    display:block;
+    width:84.41%;
+}
+.footer .footer-logo:hover img {
+    opacity:0.5;
+}
+.footer .footer-address {
+    float:right;
+    width:430px;
+}
+.footer .address-text:before {
+    content:"";
+    display:block;
+    width:134px;
+    height:1px;
+    background-color: #ccc;
+    margin:0 auto;
+}
+.footer .address-text {
+    color:#000;
+    line-height: 1.4;
+    font-size: 14px;
+    padding-top: 16px;
+    letter-spacing: 1px;
+}
+.footer .address-text span {
+    display:block;
+    padding:1em 0 0.8em;
+}
+.footer .copyright {
+    clear: both;
+    text-align: center;
+    width:100%;
+    font-size:14px;
+    color:#000;
+    letter-spacing: 1px;
+    padding:112px 0 1em;
+}
+.footer #map {
+    width: 56.25%;
+    height: 228px;
+    background-color: #ccc;
+    float:left;
+    margin-left:80px;
+}
+.footer .googlemap {
+    font-size:16px;
+    display: block;
+    width:168px;
+    text-align: center;
+    border:1px solid #ccc;
+    margin:32px auto 0;
+    line-height:30px;
+    text-decoration: none;
+    color:#000;
+    letter-spacing: 2px;
+    transition: all 0.2s linear;
+}
+.footer .googlemap:hover {
+    background-color: #eee;
+    transition: all 0.2s linear;
+}
+
+/* contents(common) ====================================================================== */
+.pages .contents .inner {
+    padding:120px 160px;
+}
+.pages .contents .inner h3 {
+    font-size:20px;
+    line-height: 2.4;
+    font-family: "a-otf-ryumin-pr6n",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 0 0 1.5em;
+}
+.pages .contents .inner h3 ~ h3 {
+    padding-top:5em;
+}
+.pages .contents .inner p {
+    font-size:16px;
+    line-height: 2.4;
+    font-family: "a-otf-ryumin-pr6n",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.pages .contents .inner p ~ p {
+    padding-top:1em;
+}
+
+
+/* MV ====================================================================== */
+.mv {
+    width:100%;
+}
+.mv li {
+    width:100%;
+    height:440px;
+}
+.mv li.mv01 {
+    background: url(../img/home/mv01.png) no-repeat center center;
+    background-size: cover;
+}
+.mv li.mv02 {
+    background: url(../img/home/mv02.png) no-repeat center center;
+    background-size: cover;
+}
+.mv li.mv03 {
+    background: url(../img/home/mv03.png) no-repeat center center;
+    background-size: cover;
+}
+.mv li.mv04 {
+    background: url(../img/home/mv04.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+
+/* contents(home) ====================================================================== */
+.home .contents .inner {
+    padding:96px 160px;
+}
+
+.arrow-before,
+.arrow-after,
+.arrow-after-big {
+    display:block;
+    position: relative;
+}
+.arrow-before:before {
+    content:"";
+    display:block;
+    width:8px;
+    height:8px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    position: absolute;
+	top: 50%;
+	left: 6%;
+	-webkit-transform: translate(0%, -50%) rotate(-135deg);
+	-moz-transform: translate(0%, -50%) rotate(-135deg);
+	-ms-transform: translate(0%, -50%) rotate(-135deg);
+	-o-transform: translate(0%, -50%) rotate(-135deg);
+	transform: translate(0%, -50%) rotate(-135deg);
+}
+.arrow-after:after {
+    content:"";
+    display:block;
+    width:8px;
+    height:8px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    position: absolute;
+	top: 50%;
+	right: 6%;
+	-webkit-transform: translate(0%, -50%) rotate(45deg);
+	-moz-transform: translate(0%, -50%) rotate(45deg);
+	-ms-transform: translate(0%, -50%) rotate(45deg);
+	-o-transform: translate(0%, -50%) rotate(45deg);
+	transform: translate(0%, -50%) rotate(45deg);
+}
+.arrow-after-big:after {
+    content:"";
+    display:block;
+    width:16px;
+    height:16px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    position: absolute;
+	top: 50%;
+	right: 2%;
+	-webkit-transform: translate(0%, -50%) rotate(45deg);
+	-moz-transform: translate(0%, -50%) rotate(45deg);
+	-ms-transform: translate(0%, -50%) rotate(45deg);
+	-o-transform: translate(0%, -50%) rotate(45deg);
+	transform: translate(0%, -50%) rotate(45deg);
+}
+
+
+.topmenu {
+    width:100%;
+}
+.topmenu li {
+    width:400px;
+    list-style-type: none;
+}
+.topmenu li:nth-of-type(2n+1) {
+    float:left;
+    clear: both;
+}
+.topmenu li:nth-of-type(2n) {
+    float:right;
+}
+.topmenu li:nth-of-type(1),
+.topmenu li:nth-of-type(2) {
+    margin-bottom:48px;
+}
+.topmenu li h3 {
+    font-size:18px;
+    letter-spacing: 2px;
+    padding-bottom:16px;
+}
+.topmenu li a {
+    display:block;
+    text-decoration: none;
+}
+.topmenu li a img {
+    display:block;
+    width:100%;
+    transition: all 0.2s linear;
+}
+.topmenu li a:hover img {
+    opacity: 0.75;
+    transition: all 0.2s linear;
+}
+.topmenu li a span {
+    display:block;
+    color:#000;
+    font-size:13px;
+    text-align: right;
+    padding:0.7em 32px 0.7em 0;
+    transition: all 0.2s linear;
+}
+.topmenu li:nth-of-type(3) a span ,
+.topmenu li:nth-of-type(4) a span {
+    padding:1.2em 32px 1.2em 0;
+}
+.topmenu li a:hover span {
+    color:#ccc;
+    transition: all 0.2s linear;
+}
+
+.pages .pagetitle {
+    width:100%;
+    min-width: 1280px;
+    height:256px;
+    position: relative;
+}
+.pages .pagetitle h2 {
+    display:inline-block;
+    font-size: 40px;
+    letter-spacing: 6px;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.ucapgroup .pagetitle {
+    background: url(../img/titlebg01.png) no-repeat center center;
+    background-size: cover;
+}
+.business .pagetitle {
+    background: url(../img/titlebg02.png) no-repeat center center;
+    background-size: cover;
+}
+.management .pagetitle {
+    background: url(../img/titlebg03.png) no-repeat center center;
+    background-size: cover;
+}
+.about .pagetitle {
+    background: url(../img/titlebg04.png) no-repeat center center;
+    background-size: cover;
+}
+
+/* 戻るボタン ====================================================================== */
+.backbtn {
+    width:248px;
+    margin:120px auto 0;
+}
+.backbtn a {
+    text-align: center;
+    width:100%;
+    line-height: 36px;
+    text-decoration: none;
+    color:#000;
+    font-size:18px;
+    letter-spacing: 2px;
+    border: 1px solid #ccc;
+    transition: all 0.2s linear;
+}
+.backbtn a:hover {
+    background-color: #eee;
+    transition: all 0.2s linear;
+}
+
+
+.table01 {
+    width:100%;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.table01 th,
+.table01 td {
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    font-size:16px;
+    font-family: "a-otf-ryumin-pr6n",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    padding:1em 2em;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.table01 th {
+    text-align: right;
+    background-color: #eee;
+}
+.table01 .table01-inner {
+    width:100%;
+    border-width:0px;
+}
+.table01 .table01-inner th,
+.table01 .table01-inner td {
+    border-width:0px;
+    padding:0.3em 0;
+}
+.table01 .table01-inner th {
+    text-align: right;
+    width:80px;
+    background-color: #fff;
+}
+.table01 .table01-inner td {
+    padding-left:2em;
+}
+
