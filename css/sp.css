@@ -47,6 +47,7 @@
     width:100%;
     z-index: 10;
     top:100%;
+    border-top:1px solid #ccc;
     border-bottom:1px solid #ccc;
 }
 .header ul.gnav li {

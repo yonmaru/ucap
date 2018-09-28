@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body {
+	word-break:normal !important;
+}
+@media screen and ( max-width:640px ) {
+    .table01 .table01-inner th {
+        width:35% !important;
+        white-space:normal !important;
+    }
+    .table01 .table01-inner td {
+    }
+}
+
+
+/* MV ====================================================================== */
+.mv li.mv01 {
+    background: url(../img/home/mv01en.png) no-repeat center center;
+    background-size: cover;
+}
+.mv li.mv02 {
+    background: url(../img/home/mv02en.png) no-repeat center center;
+    background-size: cover;
+}
+.mv li.mv03 {
+    background: url(../img/home/mv03en.png) no-repeat center center;
+    background-size: cover;
+}
+.mv li.mv04 {
+    background: url(../img/home/mv04en.png) no-repeat center center;
+    background-size: cover;
+}
+
+@media screen and ( max-width:640px ) {
+    .mv li.mv01 {
+        background: url(../img/home/mv01en_sp.png) no-repeat center center;
+        background-size: cover;
+    }
+    .mv li.mv02 {
+        background: url(../img/home/mv02en_sp.png) no-repeat center center;
+        background-size: cover;
+    }
+    .mv li.mv03 {
+        background: url(../img/home/mv03en_sp.png) no-repeat center center;
+        background-size: cover;
+    }
+    .mv li.mv04 {
+        background: url(../img/home/mv04en_sp.png) no-repeat center center;
+        background-size: cover;
+    }
+}

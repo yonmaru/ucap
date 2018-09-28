@@ -1,0 +1,45 @@
+    <footer class="footer">
+        <div class="inner">
+            <div id="map"></div>
+            <div id="contact" class="footer-address">
+                <a href="/en/" class="footer-logo"><img src="/img/common/logo01.png" alt=""></a>
+                <p class="address-text font-ryumin"><span>〒100-0005<br>2-5-2 Mitsubishi Building 11F 1169, Marunouchi, Chiyoda-ku, Tokyo</span>TEL : 03-6259-1580</p>
+                <a href="https://goo.gl/maps/V2WvFmNXvvJ2" class="googlemap arrow-after font-mr-b" target="_blank">Google Map</a>
+            </div>
+            <p class="copyright font-mr-b">Copyright &copy; UCAP &amp; Partners Japan Co.,Ltd. 2018. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function initMap() {
+            var latlng = new google.maps.LatLng( 35.680012, 139.763605 );
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: latlng,
+                mapTypeControl: false,
+                streetViewControl:false,
+                rotateControl:false,
+                scaleControl:false,
+            });
+            var marker = new google.maps.Marker({
+                position: latlng,
+                map: map,
+                icon: new google.maps.MarkerImage(
+                   '/img/common/mappin.png',
+                    new google.maps.Size(32, 47),
+                    new google.maps.Point(0, 0),
+                    new google.maps.Point(16, 47)
+                ),  
+            });
+            var mapStyle = [ {
+                "stylers": [ {
+                "saturation": -100
+                } ]
+            } ];
+            var mapType = new google.maps.StyledMapType(mapStyle);
+                map.mapTypes.set( 'GrayScaleMap', mapType);
+                map.setMapTypeId( 'GrayScaleMap' );
+          }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW9T0YYoraRIxSUk5arO1vWO-1YjVeL7I&callback=initMap"></script>
+
